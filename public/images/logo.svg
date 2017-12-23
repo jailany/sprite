@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1797 168 275 82">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_2);
+      }
+
+      .cls-2 {
+        fill: #76bed0;
+        font-size: 61px;
+        font-family: MavenProBlack, Maven Pro;
+        letter-spacing: -0.05em;
+      }
+
+      .cls-3 {
+        font-size: 55px;
+        font-family: MavenProRegular, Maven Pro;
+      }
+
+      .cls-4 {
+        filter: url(#SVGMerge);
+      }
+    </style>
+    <filter id="SVGMerge" x="1806" y="170" width="257" height="78" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-color="#7fbece"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Artboard_2">
+      <rect x="1797" y="168" width="275" height="82"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_2" data-name="Artboard – 2" class="cls-1">
+    <g class="cls-4" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <text id="SVGMerge-2" data-name="SVGMerge" class="cls-2" transform="translate(1809 232)"><tspan x="0" y="0">SVG</tspan><tspan class="cls-3" y="0">Merge</tspan></text>
+    </g>
+  </g>
+</svg>

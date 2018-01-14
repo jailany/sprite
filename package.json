@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",
-    "dev:build:server": "webpack --progress --display-error-details --watch --config webpack.server.js",
-    "dev:build:client": "webpack --progress --display-error-details --watch --config webpack.client.js",
+    "dev:build-server": "webpack --progress --display-error-details --watch --config webpack.server.js",
+    "dev:build-client": "webpack --progress --display-error-details --watch --config webpack.client.js",
     "dev:server": "nodemon --watch build --exec \"node build/bundle.js\""
   },
   "repository": {

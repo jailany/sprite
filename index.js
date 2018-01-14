@@ -6,7 +6,6 @@ const template = require('./source/template/base').default;
 const app = express();
 app.use(express.static('public'));
 
-
 app.get('/', (req, res) => {
     const content = renderToString(<Home/>);
     const html = template(content);

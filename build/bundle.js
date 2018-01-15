@@ -22373,6 +22373,10 @@ var _index = __webpack_require__(134);
 
 var _index2 = _interopRequireDefault(_index);
 
+var _home = __webpack_require__(132);
+
+var _home2 = _interopRequireDefault(_home);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22387,13 +22391,43 @@ var DropzoneContainer = function (_Component) {
     function DropzoneContainer(props) {
         _classCallCheck(this, DropzoneContainer);
 
-        return _possibleConstructorReturn(this, (DropzoneContainer.__proto__ || Object.getPrototypeOf(DropzoneContainer)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (DropzoneContainer.__proto__ || Object.getPrototypeOf(DropzoneContainer)).call(this, props));
+
+        _this.state = {
+            files: []
+        };
+        return _this;
     }
 
     _createClass(DropzoneContainer, [{
         key: 'onDrop',
         value: function onDrop(files) {
             console.log(files);
+            this.setState({
+                files: files
+            });
+        }
+    }, {
+        key: 'renderSvgList',
+        value: function renderSvgList() {
+            if (this.state.files.length > 0) {
+                return this.state.files.map(function (file) {
+                    return _react2.default.createElement(
+                        'div',
+                        { className: 'iconPreviewItemWrapper', key: file.name },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'iconPreviewItem' },
+                            _react2.default.createElement('img', { className: 'iconPreviewImage', src: file.preview }),
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'iconPreviewName' },
+                                file.name
+                            )
+                        )
+                    );
+                });
+            }
         }
     }, {
         key: 'render',
@@ -22433,6 +22467,15 @@ var DropzoneContainer = function (_Component) {
                         'div',
                         null,
                         'Drop files here to create the sprite'
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    null,
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        this.renderSvgList()
                     )
                 )
             );

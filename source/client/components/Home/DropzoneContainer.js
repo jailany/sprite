@@ -1,13 +1,35 @@
 import React, { Component } from 'react';
 import Dropzone from 'react-dropzone/dist/index';
+import homeStyles from './home.scss';
 
 class DropzoneContainer extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            files : []
+        }
     }
 
     onDrop(files){
-        console.log(files);
+        console.log(files)
+        this.setState({
+            files : files
+        });
+    }
+
+    renderSvgList(){
+        if(this.state.files.length > 0){
+            return this.state.files.map(file => {
+                return (
+                    <div className="iconPreviewItemWrapper" key={file.name}>
+                        <div className="iconPreviewItem">
+                            <img className="iconPreviewImage" src={file.preview} />
+                            <p className="iconPreviewName">{file.name}</p>
+                        </div>
+                    </div>
+                );
+            })
+        }
     }
 
     render() {
@@ -43,6 +65,12 @@ class DropzoneContainer extends Component {
                 <Dropzone accept="image/svg+xml" style={dropzoneStyles} rejectStyle={dropzoneRejectStyles} onDrop={this.onDrop.bind(this)}>
                     <div>Drop files here to create the sprite</div>
                 </Dropzone>
+
+                <div>
+                    <div>
+                        {this.renderSvgList()}
+                    </div>
+                </div>
             </div>
         );
     }

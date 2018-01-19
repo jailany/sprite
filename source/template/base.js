@@ -7,7 +7,7 @@ export default (body) => {
             <meta http-equiv="X-UA-Compatible" content="IE=edge" />
             <title>The Home Page</title>
             <link rel="stylesheet" href="app.bundle.css" />
-            <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet">
         </head>
         <body>
             <div id="root">${body}</div>

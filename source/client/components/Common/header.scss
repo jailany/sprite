@@ -1,16 +1,13 @@
 @import "theme.scss";
 
-body{
-    background-color: #ffffff;
-}
-
 header{
-    text-align: center;
-    padding: 1em;
+    padding: 0.5em 0;
+    background-color: #0B2027;
 }
 
 .logo{
-    width: 200px;
+    width: 160px;
+    vertical-align: initial;
 }
 
 .text_center{

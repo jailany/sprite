@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 25);
+/******/ 	return __webpack_require__(__webpack_require__.s = 26);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -264,9 +264,9 @@ process.umask = function () {
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(26);
-} else {
   module.exports = __webpack_require__(27);
+} else {
+  module.exports = __webpack_require__(28);
 }
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
@@ -1199,7 +1199,7 @@ module.exports = shallowEqual;
  * 
  */
 
-var isTextNode = __webpack_require__(32);
+var isTextNode = __webpack_require__(33);
 
 /*eslint-disable no-bitwise */
 
@@ -1369,6 +1369,12 @@ module.exports = checkPropTypes;
 
 /***/ }),
 /* 23 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1402,7 +1408,7 @@ if (process.env.NODE_ENV !== 'production') {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1471,7 +1477,7 @@ module.exports = warning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1481,11 +1487,11 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(30);
+var _reactDom = __webpack_require__(31);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _Home = __webpack_require__(44);
+var _Home = __webpack_require__(45);
 
 var _Home2 = _interopRequireDefault(_Home);
 
@@ -1494,7 +1500,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _reactDom2.default.hydrate(_react2.default.createElement(_Home2.default, null), document.getElementById('root'));
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1624,7 +1630,7 @@ module.exports = { Children: { map: S.map, forEach: S.forEach, count: S.count, t
     } }, Component: B.Component, PureComponent: B.PureComponent, unstable_AsyncComponent: B.AsyncComponent, createElement: G.createElement, cloneElement: G.cloneElement, isValidElement: G.isValidElement, createFactory: G.createFactory, version: "16.0.0", __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: { ReactCurrentOwner: C, assign: f } };
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1650,7 +1656,7 @@ if (process.env.NODE_ENV !== "production") {
     var emptyObject = __webpack_require__(14);
     var invariant = __webpack_require__(4);
     var emptyFunction = __webpack_require__(5);
-    var checkPropTypes = __webpack_require__(28);
+    var checkPropTypes = __webpack_require__(29);
 
     /**
      * Copyright (c) 2013-present, Facebook, Inc.
@@ -3327,7 +3333,7 @@ if (process.env.NODE_ENV !== "production") {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3345,7 +3351,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 if (process.env.NODE_ENV !== 'production') {
   var invariant = __webpack_require__(4);
   var warning = __webpack_require__(15);
-  var ReactPropTypesSecret = __webpack_require__(29);
+  var ReactPropTypesSecret = __webpack_require__(30);
   var loggedTypeFailures = {};
 }
 
@@ -3395,7 +3401,7 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3413,7 +3419,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 module.exports = ReactPropTypesSecret;
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3448,14 +3454,14 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(31);
+  module.exports = __webpack_require__(32);
 } else {
-  module.exports = __webpack_require__(34);
+  module.exports = __webpack_require__(35);
 }
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5855,7 +5861,7 @@ var ek = { createPortal: dk, hydrate: function hydrate(a, b, c) {
   unstable_deferredUpdates: Xj.deferredUpdates, flushSync: Xj.flushSync, __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: { EventPluginHub: Jb, EventPluginRegistry: sa, EventPropagators: Th, ReactControlledComponent: nb, ReactDOMComponentTree: G, ReactDOMEventListener: L } };Cj({ findFiberByHostInstance: G.getClosestInstanceFromNode, findHostInstanceByFiber: Xj.findHostInstance, bundleType: 0, version: "16.0.0", rendererPackageName: "react-dom" });module.exports = ek;
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5870,7 +5876,7 @@ var ek = { createPortal: dk, hydrate: function hydrate(a, b, c) {
  * @typechecks
  */
 
-var isNode = __webpack_require__(33);
+var isNode = __webpack_require__(34);
 
 /**
  * @param {*} object The object to check.
@@ -5883,7 +5889,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5914,7 +5920,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5925,7 +5931,7 @@ module.exports = isNode;
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};if(process.env.NODE_ENV!=="production"){(function(){'use strict';var react=__webpack_require__(1);var invariant=__webpack_require__(3);var ExecutionEnvironment=__webpack_require__(6);var _assign=__webpack_require__(7);var EventListener=__webpack_require__(16);var require$$0=__webpack_require__(8);var hyphenateStyleName=__webpack_require__(35);var emptyFunction=__webpack_require__(2);var camelizeStyleName=__webpack_require__(37);var performanceNow=__webpack_require__(39);var propTypes=__webpack_require__(41);var emptyObject=__webpack_require__(17);var checkPropTypes=__webpack_require__(22);var shallowEqual=__webpack_require__(18);var containsNode=__webpack_require__(19);var focusNode=__webpack_require__(20);var getActiveElement=__webpack_require__(21);/**
+ */var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};if(process.env.NODE_ENV!=="production"){(function(){'use strict';var react=__webpack_require__(1);var invariant=__webpack_require__(3);var ExecutionEnvironment=__webpack_require__(6);var _assign=__webpack_require__(7);var EventListener=__webpack_require__(16);var require$$0=__webpack_require__(8);var hyphenateStyleName=__webpack_require__(36);var emptyFunction=__webpack_require__(2);var camelizeStyleName=__webpack_require__(38);var performanceNow=__webpack_require__(40);var propTypes=__webpack_require__(42);var emptyObject=__webpack_require__(17);var checkPropTypes=__webpack_require__(22);var shallowEqual=__webpack_require__(18);var containsNode=__webpack_require__(19);var focusNode=__webpack_require__(20);var getActiveElement=__webpack_require__(21);/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -9319,7 +9325,7 @@ if(/^(https?|file):$/.test(protocol)){console.info('%cDownload the React DevTool
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9334,7 +9340,7 @@ if(/^(https?|file):$/.test(protocol)){console.info('%cDownload the React DevTool
 
 
 
-var hyphenate = __webpack_require__(36);
+var hyphenate = __webpack_require__(37);
 
 var msPattern = /^ms-/;
 
@@ -9361,7 +9367,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9397,7 +9403,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9412,7 +9418,7 @@ module.exports = hyphenate;
 
 
 
-var camelize = __webpack_require__(38);
+var camelize = __webpack_require__(39);
 
 var msPattern = /^-ms-/;
 
@@ -9440,7 +9446,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9475,7 +9481,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9490,7 +9496,7 @@ module.exports = camelize;
  * @typechecks
  */
 
-var performance = __webpack_require__(40);
+var performance = __webpack_require__(41);
 
 var performanceNow;
 
@@ -9512,7 +9518,7 @@ if (performance.now) {
 module.exports = performanceNow;
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9538,7 +9544,7 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = performance || {};
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9563,16 +9569,16 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(42)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(43)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(43)();
+  module.exports = __webpack_require__(44)();
 }
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10097,7 +10103,7 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10156,7 +10162,7 @@ module.exports = function () {
 };
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10170,19 +10176,19 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Header = __webpack_require__(45);
+var _Header = __webpack_require__(46);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _HeroText = __webpack_require__(46);
+var _HeroText = __webpack_require__(47);
 
 var _HeroText2 = _interopRequireDefault(_HeroText);
-
-__webpack_require__(47);
 
 __webpack_require__(48);
 
 __webpack_require__(49);
+
+__webpack_require__(23);
 
 var _DropzoneContainer = __webpack_require__(50);
 
@@ -10203,7 +10209,7 @@ var Home = function Home() {
 exports.default = Home;
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10253,7 +10259,7 @@ var Header = function (_Component) {
 exports.default = Header;
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10282,12 +10288,6 @@ var HeroText = function HeroText(props) {
 };
 
 exports.default = HeroText;
-
-/***/ }),
-/* 47 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 48 */
@@ -10322,9 +10322,13 @@ var _index = __webpack_require__(51);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _home = __webpack_require__(49);
+var _home = __webpack_require__(23);
 
 var _home2 = _interopRequireDefault(_home);
+
+var _PreviewItem = __webpack_require__(63);
+
+var _PreviewItem2 = _interopRequireDefault(_PreviewItem);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10343,40 +10347,52 @@ var DropzoneContainer = function (_Component) {
         var _this = _possibleConstructorReturn(this, (DropzoneContainer.__proto__ || Object.getPrototypeOf(DropzoneContainer)).call(this, props));
 
         _this.state = {
-            files: []
+            files: [],
+            dropzoneVisible: true
         };
         return _this;
     }
 
     _createClass(DropzoneContainer, [{
         key: 'onDrop',
-        value: function onDrop(files) {
+        value: function onDrop(files, rejectedFiles) {
             console.log(files);
-            this.setState({
-                files: files
-            });
+            if (rejectedFiles.length == 0 && files.length > 0) {
+                this.setState({
+                    files: files,
+                    dropzoneVisible: false
+                });
+            }
         }
     }, {
         key: 'renderSvgList',
         value: function renderSvgList() {
+            var _this2 = this;
+
             if (this.state.files.length > 0) {
                 return this.state.files.map(function (file) {
-                    return _react2.default.createElement(
-                        'div',
-                        { className: 'iconPreviewItemWrapper', key: file.name },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'iconPreviewItem' },
-                            _react2.default.createElement('img', { className: 'iconPreviewImage', src: file.preview }),
-                            _react2.default.createElement(
-                                'p',
-                                { className: 'iconPreviewName' },
-                                file.name
-                            )
-                        )
-                    );
+                    return _react2.default.createElement(_PreviewItem2.default, { key: file.name, file: file, removeIconHandler: _this2.removeIconHandler.bind(_this2) });
                 });
             }
+        }
+    }, {
+        key: 'removeIconHandler',
+        value: function removeIconHandler(name) {
+            var files = this.state.files;
+            var newfiles = files.filter(function (file) {
+                return !(file.name == name);
+            });
+            newfiles.length > 0 ? this.setState({ files: newfiles }) : this.setState({ files: newfiles, dropzoneVisible: true });
+        }
+    }, {
+        key: 'resetFilesHandler',
+        value: function resetFilesHandler() {
+            this.setState({ files: [], dropzoneVisible: true });
+        }
+    }, {
+        key: 'uploadFilesHandler',
+        value: function uploadFilesHandler() {
+            console.log("upload");
         }
     }, {
         key: 'render',
@@ -10384,14 +10400,12 @@ var DropzoneContainer = function (_Component) {
             var dropzoneStyles = {
                 width: '100%',
                 height: '500px',
-                backgroundColor: '#f2f2f2',
-                border: '1px solid #e2e2e2',
-                borderRadius: '8px',
+                backgroundColor: '#40798c42',
                 overflow: 'hidden',
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                color: '#636363',
+                color: '#0b2028',
                 fontSize: '1.2em',
                 fontWeight: '500'
             };
@@ -10401,32 +10415,91 @@ var DropzoneContainer = function (_Component) {
             };
 
             var wrapperStyles = {
-                padding: '1em'
+                padding: '1em 0'
             };
 
-            var placeHolderStyle = {};
+            var placeHolderStyle = {
+                padding: '8em',
+                border: 'dashed 2px #0b2028'
+            };
 
             return _react2.default.createElement(
                 'div',
-                { style: wrapperStyles },
+                null,
                 _react2.default.createElement(
-                    _index2.default,
-                    { accept: 'image/svg+xml', style: dropzoneStyles, rejectStyle: dropzoneRejectStyles, onDrop: this.onDrop.bind(this) },
+                    'div',
+                    { style: wrapperStyles, className: "dropzoneWrapper" + " " + (this.state.dropzoneVisible ? "dropzoneVisible " : "") },
                     _react2.default.createElement(
-                        'div',
-                        null,
-                        'Drop files here to create the sprite'
+                        _index2.default,
+                        { accept: 'image/svg+xml', style: dropzoneStyles, rejectStyle: dropzoneRejectStyles, onDrop: this.onDrop.bind(this) },
+                        function (_ref) {
+                            var isDragActive = _ref.isDragActive,
+                                isDragReject = _ref.isDragReject,
+                                acceptedFiles = _ref.acceptedFiles,
+                                rejectedFiles = _ref.rejectedFiles;
+
+                            if (isDragReject) {
+                                return _react2.default.createElement(
+                                    'div',
+                                    { style: placeHolderStyle },
+                                    'File format not supported. Upload SVG files.'
+                                );
+                            }
+                            return rejectedFiles.length ? _react2.default.createElement(
+                                'div',
+                                { style: placeHolderStyle },
+                                'Some files are of unsupported format. Upload SVG files.'
+                            ) : _react2.default.createElement(
+                                'div',
+                                { style: placeHolderStyle },
+                                'Drop files here to create the sprite'
+                            );
+                        }
                     )
                 ),
-                _react2.default.createElement(
+                this.state.files.length > 0 ? _react2.default.createElement(
                     'div',
                     null,
                     _react2.default.createElement(
                         'div',
-                        null,
-                        this.renderSvgList()
+                        { className: 'previewWrapper' },
+                        this.renderSvgList(),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'container-fluid' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'row' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'offset-md-10 col-md-1 noPadding' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'buttonContainer' },
+                                        _react2.default.createElement(
+                                            'button',
+                                            { onClick: this.uploadFilesHandler.bind(this), className: 'uploadButton' },
+                                            'Upload'
+                                        )
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'col-md-1 noPadding' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'buttonContainer' },
+                                        _react2.default.createElement(
+                                            'button',
+                                            { onClick: this.resetFilesHandler.bind(this), className: 'resetButton' },
+                                            'Reset'
+                                        )
+                                    )
+                                )
+                            )
+                        )
                     )
-                )
+                ) : null
             );
         }
     }]);
@@ -10446,7 +10519,7 @@ exports.default = DropzoneContainer;
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 (function webpackUniversalModuleDefinition(root, factory) {
-  if (( false ? 'undefined' : _typeof(exports)) === 'object' && ( false ? 'undefined' : _typeof(module)) === 'object') module.exports = factory(__webpack_require__(1), __webpack_require__(23));else if (true) !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(23)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+  if (( false ? 'undefined' : _typeof(exports)) === 'object' && ( false ? 'undefined' : _typeof(module)) === 'object') module.exports = factory(__webpack_require__(1), __webpack_require__(24));else if (true) !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(24)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));else if ((typeof exports === 'undefined' ? 'undefined' : _typeof(exports)) === 'object') exports["Dropzone"] = factory(require("react"), require("prop-types"));else root["Dropzone"] = factory(root["react"], root["prop-types"]);
@@ -11761,7 +11834,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var emptyFunction = __webpack_require__(10);
 var invariant = __webpack_require__(11);
-var warning = __webpack_require__(24);
+var warning = __webpack_require__(25);
 var assign = __webpack_require__(54);
 
 var ReactPropTypesSecret = __webpack_require__(12);
@@ -12382,7 +12455,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 if (process.env.NODE_ENV !== 'production') {
   var invariant = __webpack_require__(11);
-  var warning = __webpack_require__(24);
+  var warning = __webpack_require__(25);
   var ReactPropTypesSecret = __webpack_require__(12);
   var loggedTypeFailures = {};
 }
@@ -12490,6 +12563,55 @@ module.exports = function () {
 
   return ReactPropTypes;
 };
+
+/***/ }),
+/* 57 */,
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */,
+/* 62 */,
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var PreviewItem = function PreviewItem(props) {
+    return _react2.default.createElement(
+        "div",
+        { className: "iconPreviewItemWrapper" },
+        _react2.default.createElement(
+            "div",
+            { className: "iconPreviewItem" },
+            _react2.default.createElement("img", { className: "iconPreviewImage", src: props.file.preview }),
+            _react2.default.createElement(
+                "p",
+                { className: "iconPreviewName" },
+                props.file.name
+            ),
+            _react2.default.createElement(
+                "div",
+                { onClick: function onClick() {
+                        return props.removeIconHandler(props.file.name);
+                    }, className: "iconPreviewRemove" },
+                "\u2715"
+            )
+        )
+    );
+};
+
+exports.default = PreviewItem;
 
 /***/ })
 /******/ ]);

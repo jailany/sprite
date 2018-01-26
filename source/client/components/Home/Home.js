@@ -8,11 +8,32 @@ import DropzoneContainer from './DropzoneContainer';
 
 
 const Home = () => {
+
+    constructor(){
+        super();
+        this.state = {
+            hasDroppedIcons : false
+        }
+    }
+
+    updateDropStatus(status){
+        this.setState({
+            hasDroppedIcons : status
+        })
+    }
+
   return (
       <div>
-        <Header/>
-        <HeroText/>
-        <DropzoneContainer/>
+        <div className="row fullHeight">
+            <div className={"halfColumn leftContainer"+(this.state.hasDroppedIcons) ? " shrinkWidth" : ""}>
+                <HeroText/>
+            </div>
+            <div className="halfColumn rightContainer">
+                <div className="dropzoneComponent">
+                    <DropzoneContainer/>
+                </div>
+            </div>
+        </div>
       </div>
   );
 }

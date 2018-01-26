@@ -6140,9 +6140,33 @@ header {
 
 .text_center {
   text-align: center; }
+.fullHeight {
+  height: 100vh; }
+
+.row {
+  min-width: 1280px; }
+
+.leftContainer {
+  background: #1565C0;
+  color: #eee;
+  font-weight: bold;
+  font-size: 2em;
+  letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
+  display: flex; }
+
+.rightContainer {
+  background: #eeeeee; }
+
+.dropzoneComponent {
+  margin: 15px 15px 15px 0;
+  outline: 2px solid #1664c0;
+  outline-offset: -2px; }
+
 .subtitle_text {
-  margin: 2em 12em 1em;
-  color: #40798C; }
+  color: #ffffff;
+  padding: 0 2em; }
 
 .previewWrapper {
   display: flex;
@@ -6184,8 +6208,13 @@ header {
   display: none; }
 
 .dropzoneWrapper.dropzoneVisible {
-  display: block;
-  height: 500px; }
+  display: block; }
+
+.halfColumn {
+  width: 50%;
+  float: left;
+  height: 100%;
+  padding: 0 15px; }
 
 .iconPreviewRemove {
   color: red;

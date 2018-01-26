@@ -49,8 +49,7 @@ class DropzoneContainer extends Component {
     render() {
         const dropzoneStyles = {
             width : '100%',
-            height : '500px',
-            backgroundColor : '#40798c42',
+            height : 'calc(100vh - 30px)',
             overflow : 'hidden',
             display : 'flex',
             justifyContent : 'center',
@@ -65,12 +64,12 @@ class DropzoneContainer extends Component {
         }
 
         const wrapperStyles = {
-            padding : '1em 0'
+            padding : '0'
         }
 
         const placeHolderStyle = {
-            padding: '8em',
-            border : 'dashed 2px #0b2028'
+            color : '#1664c0',
+            fontWeight : 'bold'
         }
 
         return (

@@ -23,7 +23,6 @@
 
 .dropzoneComponent{
     margin: 15px 15px 15px 0;
-    outline: 2px solid #1664c0;
     outline-offset: -2px;
 }
 
@@ -35,9 +34,9 @@
 .previewWrapper{
     display: flex;
     flex-wrap: wrap;
-    padding: 1em 0.5em;
-    margin: 2em 0 0 0;
-    background-color: rgba(64, 121, 140, 0.26);
+    padding: 0.5em 0.5em;
+    margin: 1em 0 0 0;
+    background-color: #cfd8dc;
 }
 
 .iconPreviewItemWrapper{
@@ -48,16 +47,16 @@
 
 .iconPreviewItem{
     text-align: center;
-    background-color: #f2f2f2;
+    background-color: #fff;
     padding: 0.5em;
     border-radius: 4px;
     width: 100%;
-    box-shadow: 0px 0px 4px #ccc;
+    box-shadow: 1px 1px 2px #a0a0a0;
     position: relative;
 }
 
 .iconPreviewImage{
-    padding: 0.5em;
+    padding: 0.5em 0.2em;
     height: auto;
     margin: auto;
     text-align: center;
@@ -86,16 +85,29 @@
     float: left;
     height: 100%;
     padding: 0 15px;
+    overflow: auto;
+}
+
+.halfColumn.shrinkWidth{
+    width: 20%
+}
+
+.halfColumn.shrinkWidth .subtitle_text{
+    display: none;
+}
+
+.halfColumn.growWidth{
+    width: 80%;
 }
 
 .iconPreviewRemove{
     color: red;
     position: absolute;
     background: #fff;
-    padding: 0.6em;
+    padding: 0.4em;
     border-radius: 50%;
     line-height: 0.8em;
-    font-size: 0.8em;
+    font-size: 0.7em;
     text-align: center;
     font-weight: bold;
     box-shadow: 0px 0px 4px #aaa;
@@ -109,22 +121,29 @@
     padding: 0;
 }
 
+.buttonWrapper{
+    text-align: right;
+    padding: 0;
+    background-color: #cfd8dc;
+}
+
 .buttonContainer{
-    padding: 0 0.5em;
+    display: inline-block;
+    width: 50%;
 }
 
 .uploadButton, .resetButton{
     text-transform: uppercase;
     padding: 0.5em;
-    box-shadow: 1px 1px 4px #999;
     border: none;
     width: 100%;
+    padding: 1em;
     font-size: 0.9em;
     cursor: pointer;
 }
 
 .uploadButton{
-    background-color: #0b2028;
+    background-color: #1664c0;
     color: #fff;
 }
 

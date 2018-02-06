@@ -1,13 +1,12 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Header from '../common/Header';
 import HeroText from './HeroText.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../common/header.scss';
+import '../Common/bootstrap.css';
+import '../Common/header.scss';
 import './home.scss';
 import DropzoneContainer from './DropzoneContainer';
 
-
-const Home = () => {
+class Home extends Component{
 
     constructor(){
         super();
@@ -16,26 +15,37 @@ const Home = () => {
         }
     }
 
-    updateDropStatus(status){
-        this.setState({
-            hasDroppedIcons : status
-        })
+    updateDropStatus(files){
+        if(files.length > 0){
+            this.setState({
+                hasDroppedIcons : true
+            })
+        }else{
+            this.setState({
+                hasDroppedIcons : false
+            })
+        }
     }
 
-  return (
-      <div>
-        <div className="row fullHeight">
-            <div className={"halfColumn leftContainer"+(this.state.hasDroppedIcons) ? " shrinkWidth" : ""}>
-                <HeroText/>
-            </div>
-            <div className="halfColumn rightContainer">
-                <div className="dropzoneComponent">
-                    <DropzoneContainer/>
+  render(){
+      const transition = {
+          transition : 'width 0.3s ease-in-out'
+      }
+      return (
+          <div>
+            <div className="row fullHeight">
+                <div style={transition} className={"halfColumn leftContainer" + " " + (this.state.hasDroppedIcons ? "shrinkWidth " : "")}>
+                    <HeroText/>
+                </div>
+                <div style={transition} className={"halfColumn rightContainer" + " " + (this.state.hasDroppedIcons ? "growWidth " : "")}>
+                    <div className="dropzoneComponent">
+                        <DropzoneContainer update={this.updateDropStatus.bind(this)}/>
+                    </div>
                 </div>
             </div>
-        </div>
-      </div>
-  );
+          </div>
+      );
+  }
 }
 
 

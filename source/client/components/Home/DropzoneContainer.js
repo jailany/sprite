@@ -14,6 +14,7 @@ class DropzoneContainer extends Component {
 
     onDrop(files, rejectedFiles){
         console.log(files);
+        this.props.update(files);
         if(rejectedFiles.length == 0 && files.length > 0){
             this.setState({
                 files : files,
@@ -35,15 +36,20 @@ class DropzoneContainer extends Component {
         const newfiles = files.filter(file => {
             return !(file.name == name)
         });
+        this.props.update(newfiles);
         (newfiles.length > 0) ? this.setState({files : newfiles}) : this.setState({files : newfiles, dropzoneVisible : true});
     }
 
     resetFilesHandler(){
+        this.props.update([]);
         this.setState({files : [], dropzoneVisible : true});
     }
 
     uploadFilesHandler(){
-        console.log("upload");
+        const data = new FormData();
+        const uploadedFiles = this.state.files;
+        console.log(uploadedFiles);
+        console.log(data);
     }
 
     render() {
@@ -91,16 +97,10 @@ class DropzoneContainer extends Component {
                     <div>
                         <div className="previewWrapper">
                             {this.renderSvgList()}
-                            <div className="container-fluid">
-                                <div className="row">
-                                    <div className="offset-md-10 col-md-1 noPadding">
-                                        <div className="buttonContainer"><button onClick={this.uploadFilesHandler.bind(this)} className="uploadButton">Upload</button></div>
-                                    </div>
-                                    <div className="col-md-1 noPadding">
-                                        <div className="buttonContainer"><button onClick={this.resetFilesHandler.bind(this)} className="resetButton">Reset</button></div>
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
+                        <div className="buttonWrapper">
+                            <div className="buttonContainer"><button onClick={this.uploadFilesHandler.bind(this)} className="uploadButton">Upload</button></div>
+                            <div className="buttonContainer"><button onClick={this.resetFilesHandler.bind(this)} className="resetButton">Reset</button></div>
                         </div>
                     </div>
                     :

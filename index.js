@@ -12,6 +12,11 @@ app.get('/', (req, res) => {
     res.send(html);
 });
 
+app.get('/api/files', (req, res) => {
+    console.log(req.body);
+    res.json({error : false});
+});
+
 app.listen(3000, () => {
     console.log("listening to the requests at port 3000.");
 });
